@@ -10,7 +10,7 @@
  * @param {string} defaultFill - initial fill for the SVG elements (default: don't fill)
  * @return DOMNode of the wrapper
  */
-exports.createColorer = function ({url, id, colors, autoColors, groupBy, addEraser, eraserColor, defaultFill}) {
+var createColorer = exports.createColorer = function ({url, id, colors, autoColors, groupBy, addEraser, eraserColor, defaultFill}) {
 	if (!url) {
 		return undefined;
 	}
@@ -66,7 +66,7 @@ exports.createColorer = function ({url, id, colors, autoColors, groupBy, addEras
  * container - `usedClass`_container
  * image - `usedClass`
  */
-exports.createImage = function ({url, clickHandler, defaultFill, usedClass, id}) {
+var createImage = exports.createImage = function ({url, clickHandler, defaultFill, usedClass, id}) {
 	if (!url) {
 		return undefined;
 	}
@@ -126,7 +126,7 @@ exports.createImage = function ({url, clickHandler, defaultFill, usedClass, id})
  * color groups - `usedClass`_groupN
  * eraser group - `usedClass`_group_eraser
  */
-exports.createPalette = function ({colors, clickHandler, autoColors, groupBy, addEraser, usedClass, id}) {
+var createPalette = exports.createPalette = function ({colors, clickHandler, autoColors, groupBy, addEraser, usedClass, id}) {
 	let palette_container = document.createElement("div");
 	if (!usedClass) {
 		usedClass = ""
