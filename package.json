@@ -1,0 +1,13 @@
+{
+  "name": "@trinistr/svg-coloring",
+  "version": "0.1.0",
+  "description": "A module to create colorable SVG images",
+  "main": "index.js",
+  "keywords": ["svg", "color"],
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/trinistr/svg-coloring.git"
+  },
+  "author": "trinistr",
+  "license": "Apache 2.0"
+}
